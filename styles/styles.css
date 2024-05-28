@@ -1,0 +1,31 @@
+.hidden{
+    display: none;
+}
+.hero{
+height: 90vh;
+}
+.icon{
+    height: 24px;
+    width: 24px;
+}
+.indicacion{
+    display: inline;
+}
+.presentacion{
+    height: 50vh;
+}
+.nosotros{
+    height: 80vh;
+}
+.card{
+    width: 18rem;
+}
+.productos{
+    height: 90vh;
+}
+.proyectos{
+    height: auto;
+}
+.planes{
+    height: 90vh;
+}
