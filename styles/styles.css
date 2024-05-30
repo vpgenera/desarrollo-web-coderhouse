@@ -1,18 +1,24 @@
+*{
+    
+}
 .hidden{
     display: none;
 }
 .hero{
-height: 90vh;
+height: 80vh;
+}
+.navbar-toggler {
+    border: none;
 }
 .icon{
     height: 24px;
     width: 24px;
 }
 .indicacion{
-    display: inline;
+    height: 30vh;
 }
 .presentacion{
-    height: 50vh;
+    height: 60vh;
 }
 .nosotros{
     height: 80vh;
@@ -29,3 +35,11 @@ height: 90vh;
 .planes{
     height: 90vh;
 }
+
+.h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+
+
