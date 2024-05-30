@@ -1,11 +1,10 @@
-*{
-    
-}
+
 .hidden{
     display: none;
 }
 .hero{
-height: 80vh;
+    height: auto;
+    
 }
 .navbar-toggler {
     border: none;
@@ -14,31 +13,46 @@ height: 80vh;
     height: 24px;
     width: 24px;
 }
-.indicacion{
-    height: 30vh;
-}
+
 .presentacion{
-    height: 60vh;
+    height: auto;
 }
 .nosotros{
     height: 80vh;
 }
+.productos{
+    height: auto;
+}
+
 .card{
     width: 18rem;
 }
-.productos{
-    height: 90vh;
-}
+
 .proyectos{
     height: auto;
 }
+
 .planes{
-    height: 90vh;
+    height: auto;
 }
 
 .h2{
     text-transform: uppercase;
     font-size: 1rem;
+}
+.imgProductos{
+    height: 20vh;
+}
+.linkEncubierto{
+    text-decoration: none;
+    
+}
+.formularioContacto{
+  
+}
+.heroImgProductos{
+    height: 40vh;
+    
 }
 
 
