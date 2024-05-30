@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
 
   </head>
-  <body>
+  <body bg-light text-dark>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -43,29 +43,32 @@
     </header>
     <main class="container">
         <div class="hero row align-items-end">
-            <h1 class="column text-center display-1">Diseñamos Experiencias</h1>
-            <div class="col-3 justify-content-end ms-auto">
-                <p class="indicacion">Desliza</p><ion-icon name="arrow-down-outline"></ion-icon>
-            </div>
+            <h1 class="heroText col-lg-7 text-center text-lg-start display-1">Diseñamos Experiencias</h1>
+            <p class="legendText col-lg-5 text-center text-lg-start">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.</p>
+        </div>
+        <div class="row indicacion align-items-center">
+              <p class="text-end align-items-center">Desliza <ion-icon name="arrow-down-outline"></ion-icon> </p>
+        </div>
         </div>
         
-        <div class="presentacion col col-md-6 text-center  p-3">
-            <p class=" justify-content-center align-items-center">Combinamos Diseño innovador y Desarrollo técnico para crear sitios web que cautivan</p>
+        <div class="row presentacion text-center align-items-center justify-content-evenly">
+            <p class="justify-content-center col-10 col-md-5 text-wrap">Combinamos Diseño innovador y Desarrollo técnico para crear sitios web que cautivan</p>
+            <img class="imgimg col-md-6" src="./assets/img-relleno.png" alt="imagen-de-relleno">
         </div>
-        <section class="nosotros align-items-center">
-            <h2 class="text-center">Quienes Somos</h2>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. 
+        <section class="row nosotros align-items-center">
+            <h2 class="col-lg-6 h2 text-start">Quienes Somos</h2>
+            <p class="text-center col-lg-6">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. 
                 Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
         </section>
 
-        <section class="productos">
-          <div class="row">
-            <h2 class="col text-center">Productos</h2>
+        <section class="row productos">
+          <div>
+            <h2 class="col text-start h2">Productos</h2>
           </div>
           <div>
             <h3 class="col text-center">Corporativa, Landing o E-commerce</h3>
           </div>
-          <div> <p>Escoge la que más se adecue a tus necesidades únicas</p> </div>
+          <div class="text-center"> <p>Escoge la que más se adecue a tus necesidades únicas</p> </div>
 
 
 
@@ -74,10 +77,10 @@
 
         <section class="proyectos">
           <div class="row">
-            <h2 class="col text-center">Proyectos</h2>
+            <h2 class="col text-start h2">Proyectos</h2>
           </div>
           <div>
-            <h3 class="col text-center">Lo que nuestras manos han logrado</h3>
+            <h3 class="col text-start">Nuestros trabajos nos llenan de orgullo </h3>
           </div>
           <div>
             <div id="carouselExampleCaptions" class="carousel slide">
@@ -127,39 +130,40 @@
 
         </section>
 
-        <section class="planes">
-            <div class="row">
-                <h2 class="col text-center">Nuestros Planes</h2>
+        <section class="planes row pt-5">
+            <div>
+                <h2 class="col-12 text-start h2">Nuestros Planes</h2>
             </div>
             <div>
-                <h3 class="col text-center">Tenemos planes para todos</h3>
+                <h3 class="col-12 text-start">Tenemos planes para todos</h3>
             </div>
-            <div class="cardPlanes row row-cols-lg-3 gy-3 justify-content-evenly">
-              <article class="card rounded-4" >
-                <img src="..." class="card-img-top" alt="...">
+            <div class="cardPlanes row gy-3 justify-content-evenly align-items-center">
+              <article class="card col-lg-3 rounded-4 al" >
+                <img class="rounded-4 pt-2" src="./assets/img-relleno.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Plan 1</h5>
+                  <h5 class="card-title text-center">Plan 1</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </article>
-              <article class="card rounded-4" >
-                <img src="..." class="card-img-top" alt="...">
+              <article class="card col-lg-3 rounded-4" >
+                <img class="rounded-4 pt-2" src="./assets/img-relleno.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Plan 2</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title text-center">Plan 2</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
                 </div>
               </article>
-              <article class="card rounded-4" >
-                <img src="..." class="card-img-top" alt="...">
+              <article class="card col-lg-3 rounded-4" >
+                <img class="rounded-4 pt-2" src="./assets/img-relleno.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Plan 3</h5>
+                  <h5 class="card-title text-center">Plan 3</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </article>
             </div>
+            <div class="text-center pt-3">
+            <button type="button" class="btn btn-dark rounded-4">Ver planes en detalle</button>
+            </div>
+            
         </section>
        
         
