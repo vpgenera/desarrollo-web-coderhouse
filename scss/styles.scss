@@ -1,0 +1,205 @@
+@import"variables";
+@import"index";
+@import"media";
+@import"contacto";
+@import"extend";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+.hidden{
+    display: none;
+}
+/*
+.sticky{
+    @extend %sticky;
+    position: sticky;
+    top: 70px;
+    padding-top: 16px;   
+}
+}*/
+/*.section{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 16px;
+    background-color: $color-gris-clarito;
+    height: 90vh;
+    row-gap: 16px;
+}*/
+.sectioAbsolute{
+    position: absolute;
+    z-index: 1;
+    top:0;
+}
+body{
+    background-color: $color-gris-clarito;
+    color: $color-gris-primario;
+    font-family: $fuente-textos;
+    position: relative;
+    scroll-behavior: smooth;
+    
+    .header{
+        width: 100vw;
+        background-color: $color-gris-clarito;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+    nav{
+        text-transform: uppercase ;
+        .nav-link{
+            text-decoration: underline transparent;
+            transition:  text-decoration step-start 2s, opacity var(--animation-link);
+
+            &:hover{
+                text-decoration: underline;
+                opacity: 1 ;
+                
+                
+                }
+            }
+        }
+}
+.estiloH1{
+    font-family: $fuente-titulos;
+    font-size: $font-size-xl;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+
+}
+
+
+p{
+    font-size: $font-size-400 ;
+
+}
+/*.estiloBody2{
+   font-size: $font-size-500 ;
+
+}*/
+.boton1{
+    width: auto;
+    min-height: 48px;
+    height: fit-content;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: $color-gris-clarito;
+    transition: color 2s;
+
+    a{
+        color: $color-gris-primario;
+        text-decoration: none;
+    }
+    &:hover{
+        background-color: $color-gris-primario;
+        
+        outline: solid 2px $color-gris-clarito;
+        a{
+            color: $color-gris-clarito;
+            text-decoration: none;
+        }
+    }
+}
+.boton2{
+    width: auto;
+    height: 48px;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: transparent;
+    transition: color ease-in 2s;
+    a{
+        color: $color-gris-clarito;
+        text-decoration: none;
+        
+    }
+    &:hover{
+        background-color: $color-gris-primario;
+        outline: solid 2px $color-gris-clarito;
+        a{
+            color: $color-gris-clarito;
+            text-decoration: none;
+        }
+    }
+}
+.boton3{
+    width: auto;
+    height: 48px;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: $color-gris-primario;
+    transition: outline 2s ease, background-color 0,1s ease;
+
+    a{
+        color: $color-gris-clarito;
+        text-decoration: none;
+        outline:solid 2px transparent;
+        
+        
+    }
+    &:hover{
+        background-color: transparent;
+        outline: solid 2px $color-gris-primario;
+        a{
+            color: $color-gris-primario;
+            text-decoration: none;
+            
+        }
+    }
+}
+
+
+
+
+/*
+
+
+.navbar-toggler {
+    border: none;
+}
+.presentacion{
+    height: auto;
+}
+.nosotros{
+    height: 80vh;
+}
+.productos{
+    height: auto;
+}
+
+.card{
+    width: 18rem;
+}
+
+.proyectos{
+    height: auto;
+}
+
+.planes{
+    height: auto;
+}
+.h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.imgProductos{
+    height: 20vh;
+}
+.linkEncubierto{
+    text-decoration: none;
+    
+}
+
+.heroImgProductos{
+    height: 40vh;
+    
+}
+.nav-item{
+    &hover{
+        text-decoration: underline;
+    }
+}
+*/

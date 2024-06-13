@@ -1,0 +1,31 @@
+%section{
+    display: flex;
+    padding: 16px;
+    background-color: $color-gris-clarito;
+    height: 90vh;
+    row-gap: 16px;
+    column-gap: 16px;
+}
+
+
+
+%sticky{
+    position: sticky;
+    top: 70px;
+    padding-top: 16px;
+}
+
+%estiloH2{
+    font-size: $font-size-xl;
+    font-family: $fuente-titulos;
+    font-weight: 200; 
+}
+%estiloH3{
+    font-size: $font-size-600;
+    font-family: $fuente-textos;
+    font-weight: 500; 
+}
+
+%estiloBody2{
+    font-size: $font-size-500 ;
+}

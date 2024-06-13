@@ -1,0 +1,506 @@
+/*.contenedorTexto{
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    gap: 16px;
+    align-items: center;
+} */
+main {
+  position: relative;
+  top: 70px;
+}
+main .hero {
+  display: flex;
+  flex-flow: column wrap;
+  background-image: linear-gradient(to top, rgba(33, 31, 31, 0.7), rgba(0, 0, 0, 0)), url(../assets/images/experiencia-comprimida.jpg);
+  background-color: rgba(33, 31, 31, 0.5);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  color: #fbfbfb;
+  height: 90dvh;
+  justify-content: end;
+  padding: 16px;
+  align-items: start;
+}
+main .hero .contenedorTexto {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+}
+main .hero .botones {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  gap: 16px;
+  align-items: center;
+}
+main .presentation {
+  flex-flow: row wrap;
+  align-content: space-between;
+}
+main .presentation .heroPresentation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+  padding-top: 200px;
+}
+main .presentation .heroPresentation p {
+  text-align: center;
+}
+main .presentation .contenedorTexto {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  padding-bottom: 100px;
+}
+main .presentation .contenedorTexto p {
+  text-align: center;
+}
+main .presentation .botones {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  gap: 16px;
+  align-items: center;
+}
+main .projects {
+  flex-flow: row wrap;
+}
+main .projects h2 {
+  padding-top: 40px;
+}
+main .projects .carrouselContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.team {
+  flex-flow: row wrap;
+}
+
+.proyectos {
+  background-color: #fbfbfb;
+  padding: 16px;
+}
+.proyectos .carousel-inner {
+  border-radius: 12px;
+  height: 500px;
+}
+.proyectos .carousel-inner .carousel-item {
+  height: 500px;
+}
+.proyectos .carousel-inner .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.productos {
+  flex-flow: row wrap;
+}
+
+.planes {
+  flex-flow: column wrap;
+}
+.planes .cards {
+  display: flex;
+  flex-flow: row wrap;
+}
+.planes .cards article {
+  width: 18rem;
+  padding: 8px;
+}
+.planes .cards article img {
+  object-fit: contain;
+  border-radius: 12px;
+}
+.planes .cards article .cardBody {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/*.heroPrincipal{
+    display: flex;
+    flex-flow: column wrap; 
+    background-image: linear-gradient(to top, rgb(33 31 31 /70%),rgb(0 0 0/ 0%)), url(../assets/images/experiencia-comprimida.jpg) ;
+    background-color: rgb(33 31 31 /50%);    
+    background-size: cover;
+    background-position: center center ;
+    background-blend-mode:multiply;
+    color:$color-gris-clarito;
+    height: 90dvh;
+    justify-content: end;
+    padding: 16px;
+    align-items:start;
+
+
+}*/
+.section {
+  overflow-y: scroll;
+  /* .heroPresentation{
+       display: flex;
+       flex-flow: row wrap;
+       width: 100%;
+       gap: 8px;
+       padding-top: 200px;
+       align-items: center;
+       justify-content: center;
+
+
+   }*/
+}
+.section .divSeparador {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.section .divSeparador .headerSection {
+  height: 10vh;
+}
+.section .divSeparador .textContainer {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 18rem;
+  flex-grow: 1;
+  width: 50%;
+  text-align: start;
+  align-items: flex-start;
+}
+.section .divSeparador .imageContainer {
+  display: flex;
+  flex-grow: 1;
+  width: 50%;
+  max-height: 40vh;
+}
+.section .divSeparador .imageContainer img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  max-height: 100%;
+}
+
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#testimonials .testimonial-heading {
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+#testimonials .testimonial-heading h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: #211F1F;
+  color: #211F1F;
+  padding: 10px 20px;
+}
+#testimonials .testimonial-heading span {
+  font-size: 1.3rem;
+  color: #211F1F;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#testimonials .testimonial-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#testimonials .testimonial-box-container .testimonial-box {
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: #fbfbfb;
+  padding: 20px;
+  margin: 15;
+  cursor: pointer;
+}
+#testimonials .testimonial-box-container .testimonial-box:hover {
+  transform: scale(1.05);
+  transition: all ease 0.9s;
+}
+#testimonials .testimonial-box-container .testimonial-box .box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#testimonials .testimonial-box-container .testimonial-box .box-top .profile {
+  display: flex;
+  align-items: center;
+}
+#testimonials .testimonial-box-container .testimonial-box .box-top .profile .profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+#testimonials .testimonial-box-container .testimonial-box .box-top .profile .profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#testimonials .testimonial-box-container .testimonial-box .box-top .profile .user-name {
+  display: flex;
+  flex-direction: column;
+}
+#testimonials .testimonial-box-container .testimonial-box .box-top .profile .user-name strong {
+  color: #211F1F;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+#testimonials .testimonial-box-container .testimonial-box .box-top .profile .user-name span {
+  color: #979797;
+  font-size: 0.8rem;
+}
+#testimonials .testimonial-box-container .testimonial-box .box-top .profile .reviews i {
+  color: #f9d71c;
+}
+#testimonials .testimonial-box-container .testimonial-box .client-comment p {
+  font-size: 0.9rem;
+  color: #211F1F;
+}
+
+main .presentation, main .projects, .team, .productos, .planes {
+  display: flex;
+  padding: 16px;
+  background-color: #fbfbfb;
+  height: 90vh;
+  row-gap: 16px;
+  column-gap: 16px;
+}
+
+main .hero, main .presentation, main .projects, .team, .proyectos, .productos, .planes {
+  position: sticky;
+  top: 70px;
+  padding-top: 16px;
+}
+
+main .presentation .heroPresentation p {
+  font-size: clamp(2rem, 7vw + 1rem, 4rem);
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+main .projects h2 {
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+}
+
+main .presentation .contenedorTexto p {
+  font-size: 1.25rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+.sticky{
+    @extend %sticky;
+    position: sticky;
+    top: 70px;
+    padding-top: 16px;   
+}
+}*/
+/*.section{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 16px;
+    background-color: $color-gris-clarito;
+    height: 90vh;
+    row-gap: 16px;
+}*/
+.sectioAbsolute {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+body {
+  background-color: #fbfbfb;
+  color: #211F1F;
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  scroll-behavior: smooth;
+}
+body .header {
+  width: 100vw;
+  background-color: #fbfbfb;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+body nav {
+  text-transform: uppercase;
+}
+body nav .nav-link {
+  text-decoration: underline transparent;
+  transition: text-decoration step-start 2s, opacity var(--animation-link);
+}
+body nav .nav-link:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.estiloH1 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2rem, 7vw + 1rem, 4rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/*.estiloBody2{
+   font-size: $font-size-500 ;
+
+}*/
+.boton1 {
+  width: auto;
+  min-height: 48px;
+  height: fit-content;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #fbfbfb;
+  transition: color 2s;
+}
+.boton1 a {
+  color: #211F1F;
+  text-decoration: none;
+}
+.boton1:hover {
+  background-color: #211F1F;
+  outline: solid 2px #fbfbfb;
+}
+.boton1:hover a {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
+.boton2 {
+  width: auto;
+  height: 48px;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: transparent;
+  transition: color ease-in 2s;
+}
+.boton2 a {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+.boton2:hover {
+  background-color: #211F1F;
+  outline: solid 2px #fbfbfb;
+}
+.boton2:hover a {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
+.boton3 {
+  width: auto;
+  height: 48px;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #211F1F;
+  transition: outline 2s ease, background-color 0, 1s ease;
+}
+.boton3 a {
+  color: #fbfbfb;
+  text-decoration: none;
+  outline: solid 2px transparent;
+}
+.boton3:hover {
+  background-color: transparent;
+  outline: solid 2px #211F1F;
+}
+.boton3:hover a {
+  color: #211F1F;
+  text-decoration: none;
+}
+
+/*
+
+
+.navbar-toggler {
+    border: none;
+}
+.presentacion{
+    height: auto;
+}
+.nosotros{
+    height: 80vh;
+}
+.productos{
+    height: auto;
+}
+
+.card{
+    width: 18rem;
+}
+
+.proyectos{
+    height: auto;
+}
+
+.planes{
+    height: auto;
+}
+.h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.imgProductos{
+    height: 20vh;
+}
+.linkEncubierto{
+    text-decoration: none;
+
+}
+
+.heroImgProductos{
+    height: 40vh;
+
+}
+.nav-item{
+    &hover{
+        text-decoration: underline;
+    }
+}
+*/
+
+/*# sourceMappingURL=styles.css.map */
