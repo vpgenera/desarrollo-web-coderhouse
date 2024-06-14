@@ -1,10 +1,19 @@
 %section{
-    display: flex;
-    padding: 16px;
     background-color: $color-gris-clarito;
-    height: 90vh;
+    color: $color-gris-primario;
+    padding: 4rem 1rem;
     row-gap: 16px;
     column-gap: 16px;
+    width: 100%;
+    min-height: 800px;
+    
+}
+%sectionInside{
+    background-color: $color-gris-clarito;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    
 }
 
 
@@ -12,7 +21,7 @@
 %sticky{
     position: sticky;
     top: 70px;
-    padding-top: 16px;
+    
 }
 
 %estiloH2{
@@ -25,7 +34,19 @@
     font-family: $fuente-textos;
     font-weight: 500; 
 }
+%estiloH4{
+    font-size: $font-size-500;
+    font-family: $fuente-textos;
+    font-weight: 500; 
+}
+
 
 %estiloBody2{
     font-size: $font-size-500 ;
+}
+
+%estiloH2bootstrap{
+    font-size: calc(1.325rem + .9vw);
+    font-family: $fuente-textos;
+    font-weight: 500;
 }

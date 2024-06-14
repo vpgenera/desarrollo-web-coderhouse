@@ -4,3 +4,29 @@
     $font-size-500: 1.75rem;
     $font-size-600: 2.5rem;
 }
+@media only screen and (max-width: 768px){
+    .footer-Main{
+        flex-direction: column;
+    }
+}
+/*
+@media only screen and (max-width:768px){
+    footer{
+        .contenedor{
+            .footer-Main{
+                flex-direction: column;
+            }
+
+        }
+        
+    }
+    
+}
+@media screen and (max-width:768px){
+    .footer-Main{
+        flex-direction: column;
+    }
+}
+*/
+
+    
