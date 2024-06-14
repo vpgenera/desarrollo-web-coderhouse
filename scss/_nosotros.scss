@@ -2,8 +2,8 @@ main{
     position: relative;
     top: 70px;
 
-    .heroContacto{
-        background-image: linear-gradient(to top, rgb(33 31 31 /70%),rgb(0 0 0/ 0%)), url(../assets/images/contacto.jpg) ;
+    .heroNosotros{
+        background-image: linear-gradient(to top, rgb(33 31 31 /70%),rgb(0 0 0/ 0%)), url(../assets/images/equipo-creativo.jpg) ;
         background-color: rgb(33 31 31 /50%);    
         background-size: cover;
         background-position: center center ;
@@ -14,7 +14,7 @@ main{
         justify-content: end;
         padding: 16px;
         align-items:start;
-        @extend %sticky;
+        
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -25,6 +25,9 @@ main{
             margin: 0 auto;
             width: 100%;
             flex-flow: column wrap;
+            position: relative;
+            overflow-y: scroll;
+        
             .titulo{
                 @extend %estiloH2;
             }
@@ -35,14 +38,10 @@ main{
 
 
     }
-
-
-
-
-    .testimonials{
+    .Equipo{
         width: 100%;
         @extend %section;
-        @extend %sticky;
+        
 
         .contenedorTestimonials{
             max-width: 1200px;
@@ -65,7 +64,7 @@ main{
                 width: 100%;
                 gap: 16px;
                 .testimonial-box{
-                    width: 500px;
+                    width: 350px;
                     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
                     background-color: $color-gris-clarito;
                     padding: 20px;
@@ -80,16 +79,17 @@ main{
                     }
                     .box-top{
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: center;
                         align-items: center;
                         margin-bottom: 20px;
         
                         .profile{
                             display: flex;
+                            flex-direction: column;
                             align-items: center;
                             .profile-img{
-                                width: 50px;
-                                height: 50px;
+                                width: 150px;
+                                height: 150px;
                                 border-radius: 50%;
                                 overflow: hidden;
                                 margin-right: 10px;
@@ -103,6 +103,7 @@ main{
                             .user-name{
                                 display: flex;
                                 flex-direction: column ;
+                                align-items: center;
                                 strong{
                                     color: $color-gris-primario;
                                     font-size: 1.1rem;
@@ -123,6 +124,13 @@ main{
         
                         }
                     }
+                    .member-comment{
+                        text-align: center;
+                       
+                        p{
+                            text-align: center;
+                        }
+                    }
 
                 }    
             }
@@ -131,73 +139,5 @@ main{
 
         }
     }
-    .contact{
-        @extend %section;
-        width:100%;
-        @extend %sticky;
-        .container{
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-flow: column nowrap;
-            .headerContainer{
-                text-align: start;
-                width: 100%;
-            }
-            .bodyContainer{
-                display: flex;
-                flex-flow: row wrap;
-                padding-top: 16px;
-                column-gap: 24px;
-                row-gap: 16px;
-                justify-content: space-between;
-                .text{
-                    flex-basis: 15rem;
-                    text-align: start;
-                }
-                .form{
-                    width: 60%;
-                    flex-grow: 1;
-                    max-width: 40rem;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    .formularioContacto{
-                        display: flex;
-                        flex-flow: column nowrap;
-                        gap:16px;
-                    }
-                   
-                    .form-control{
-                        outline: solid 1px $color-gris-primario;
-                    }
-                    .input-group-text{
-                        outline: solid 1px $color-gris-primario;
-                    }
-                    .boton{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                }
-            }
-        }
-    }
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
