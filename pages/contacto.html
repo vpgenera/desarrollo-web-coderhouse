@@ -67,42 +67,135 @@
         <div class="contenedor">
           <p class="titulo">Las relaciones se construyen con confianza</p>
           <p>Queremos escuchar lo que tienes para decir!</p>
-
         </div>
-
       </section>
       <!--nuevo-->
-      <section id="testimonials">
-        <div class="testimonials-heading">
-          <span>Comentarios</span>
-          <h1 class="estiloH1">Los clientes opinan</h1>
-        </div>
-        <div class="testimonial-box-container">
-          <div class="testimonial-box">
-            <div class="box-top">
-              <div class="profile">
-                <div class="profile-img">
-                  <img src="../assets/avatar.png" alt="">
-                </div>
-                <div class="user-name">
-                  <strong>Camila Jimenez</strong>
-                  <span>@camiji</span>
-                </div>
-              </div>
-              <div class="reviews">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-            </div>
-            <div class="client-comment">
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quis, voluptas, delectus inventore numquam minima, explicabo fuga impedit temporibus incidunt necessitatibus quia modi vitae tenetur mollitia hic est. Quis, in!</p>
-            </div>
-
+      <section class="testimonials">
+        <div class="contenedorTestimonials">
+          <div class="testimonials-heading">
+            <span>Comentarios</span>
+            <h1 class="estiloH1">Los clientes opinan</h1>
           </div>
 
+          <div class="testimonial-box-container">
+            <!--testimonio 1-->
+            <div class="testimonial-box">
+              <div class="box-top">
+                <div class="profile">
+                  <div class="profile-img">
+                    <img src="../assets/avatar.png" alt="">
+                  </div>
+                  <div class="user-name">
+                    <strong>Camila Jimenez</strong>
+                    <span>@camiji</span>
+                  </div>
+                </div>
+                <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <div class="client-comment">
+                <p>Recomiendo totalmente, cumplieron con los plazos y las expectativas.</p>
+              </div>
+  
+            </div>
+            <!--testimonio2-->
+
+            <div class="testimonial-box">
+              <div class="box-top">
+                <div class="profile">
+                  <div class="profile-img">
+                    <img src="../assets/avatar.png" alt="">
+                  </div>
+                  <div class="user-name">
+                    <strong>Andrés Ortega</strong>
+                    <span>@botual</span>
+                  </div>
+                </div>
+                <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="client-comment">
+                <p>Son muy cercanos y aún así totalmente profesionales. Pronto los contactaré para otro proyecto.</p>
+              </div>
+  
+            </div>
+            <!--testimonio3-->
+
+            <div class="testimonial-box">
+              <div class="box-top">
+                <div class="profile">
+                  <div class="profile-img">
+                    <img src="../assets/avatar.png" alt="">
+                  </div>
+                  <div class="user-name">
+                    <strong>Tamara Padilla</strong>
+                    <span>@padto</span>
+                  </div>
+                </div>
+                <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="client-comment">
+                <p>Muy buenos! No sabía bien lo que necesitaba y me guiaron en todo momento. Los resultados impecables!</p>
+              </div>
+  
+            </div>
+        
+          </div>
+        </div>
+      </section>
+
+
+      <!--contacto-->
+      <section class="contact">
+        <div class="container">
+            <div class="headerContainer">
+              <h2>Contacto</h2>
+              <p>Tienes alguna duda? Hablemos! </p>
+            </div>
+            <div class="bodyContainer">
+              <div class="text">
+                <p>Esperamos ansiosos nuestro próximo desafío! También aceptamos nuevos talentos en nuestro equipo.</p>
+                <strong>Con confianza!</strong>
+              </div>
+              <div class="form">
+                <form class="formularioContacto">
+                  <div>
+                    <label for="nombre" class="form-label">Nombre y Apellido</label>
+                    <input type="email" class="form-control rounded-3" id="nombre" aria-describedby="emailHelp" placeholder="Ingresa tu Nombre y Apellido">
+                  </div>
+
+                  <div>
+                    <label for="email" class="form-label">Dirección de Email </label>
+                    <input type="email" class="form-control rounded-3" id="email" aria-describedby="emailHelp" placeholder="Ingresa tu dirección de email">
+                    <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie más</div>
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-text">Mensaje</span>
+                    <textarea class="form-control rounded-3" aria-label="With textarea"></textarea>
+                  </div>
+                  <div class="boton">
+                    <button type="submit" class="boton3">Enviar</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
         </div>
 
       </section>
@@ -114,7 +207,9 @@
 
 
 
-      <!---->
+
+
+      <!-- Probar más adelante
       
 
       <section class="reviews container pt-5 pb-5 mt-5 mb-5">
@@ -145,95 +240,67 @@
           </div>
           
         </div>
-        
-
+     
       </section>
-      <section class="contacto pt-5 pb-5 mt-5 mb-5">
-        <div class="container text-center text-md-left">
-          <div class="row text-start">
-            <h2 class="h2">Contacto</h2>
-            <h3>Tienes alguna duda? Hablemos!</h3>
-          </div>
-          <div class="row text-start">
-            <form class="formularioContacto col-md-7 col-xl-5 mx-md-auto mt-4">
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre y Apellido</label>
-                <input type="email" class="form-control rounded-3" id="nombre" aria-describedby="emailHelp" placeholder="Ingresa tu Nombre y Apellido">
-              </div>
-              
-              <div class="mb-3">
-                <label for="email" class="form-label">Dirección de Email </label>
-                <input type="email" class="form-control rounded-3" id="email" aria-describedby="emailHelp" placeholder="Ingresa tu dirección de email">
-                <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie más</div>
-              </div>
-              <div class="input-group">
-                <span class="input-group-text">Mensaje</span>
-                <textarea class="form-control rounded-3" aria-label="With textarea"></textarea>
-              </div>
-              <div class="text-center pt-4 pb-4">
-                <button type="submit" class="btn btn-dark rounded-4">Enviar</button>
-                </div>
-            </form>
-
-          </div>
-
-        </div>
-
-    </section>
-        
-
+-->
       
-
+    
     </main>
-    <footer class="bg-dark text-white pt-5 pb-4">
-      <div class="container text-center text-md-left">
-        <div class="row text-center text-md-left">
-          <div class="col-md-3 mx-auto mt-3">
-            <h4 class="pt-2 mb-4 font-weight-bold">Medio Creativa</h4>
-            <img src="../assets/LOGO.png" alt="logoMedioCreativa">
-            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatibus autem excepturi suscipit voluptate repellat.</p>
+
+    <footer>
+      <div class="contenedor">
+        <div class="footer-Main">
+          <div class="columns">
+            <img src="../assets/logoM.png" alt="logo-medio-creativa">
           </div>
-          <div class="col-md-3 align-items-center mx-auto mt-3">
-            <h4>Páginas</h4>
-            <p><a class="linkEncubierto text-white" href="../index.html">Inicio</a></p>
-            <p><a class="linkEncubierto text-white" href="./nosotros.html">Nosotros</a></p>
-            <p><a class="linkEncubierto text-white" href="./productos.html">Productos</a></p>
-            <p><a class="linkEncubierto text-white" href="./proyectos.html">Proyectos</a></p>
-            
+          <div class="columns">
+            <h3 class="columnHeading">Páginas</h3>
+            <a class="links" href="../index.html">Inicio</a>
+            <a class="links" href="./nosotros.html">Nosotros</a>
+            <a class="links" href="./productos.html">Productos</a>
+            <a class="links" href="./proyectos.html">Proyectos</a>
+            <a class="links" href=".#">Contacto</a>
+  
           </div>
-          <div class="col-md-5 text-center text-md-start mt-3">
-            <h4>Suscríbete</h4>
-            <p>Únete a nuestro boletin para estar al día de las novedades y lanzamientos</p>
-            <form>
-              <div class="mb-3">
-                <label for="email" class="form-label">Dirección de Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingresa tu correo electronico">
-                <div id="emailHelp" class="form-text">Nunca compartiremos tu email</div>
-              </div>  
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="acepto">
-                <label class="form-check-label" for="acepto">Acepto la Politica de privacidad y otorgo mi consentimiento para recibir actualizaciones de esta empresa</label>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-light rounded-4">Suscribirme</button>
-              </div>
-            </form>
+          <div class="columns">
+              <h3>Suscríbete</h3>
+              <p>Únete a nuestro boletin para estar al día de las novedades y lanzamientos</p>
+              <form>
+                <div>
+                  <label for="email" class="form-label">Dirección de Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingresa tu correo electronico">
+                  <div id="emailHelp" class="form-text">Nunca compartiremos tu email</div>
+                </div>  
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="acepto">
+                  <label class="form-check-label" for="acepto">Acepto la Politica de privacidad y otorgo mi consentimiento para recibir actualizaciones de esta empresa</label>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-light rounded-4">Suscribirme</button>
+                </div>
+              </form>
+  
           </div>
         </div>
+        <div class="footerBottom">
+          <span class="copyright">&copy; 2024 Medio Creativa</span>
+          <a href="#" class="footerSocial"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="footerSocial"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footerSocial"><i class="fa-brands fa-behance"></i></a>
+  
+        </div>
       </div>
-      <div class="container-fluid text-center text-md-left">
-          <div class="row text-center text-md-left align-items-end">
-            <div class="col-md-3 mx-auto mt-3"><p>2024 Medio Creativa. Todos los derechos reservados. </p></div>
-            <div class="col-md-3 mx-auto mt-3"><p>Politica de privacidad</p></div>
-            <div class="col-md-3 mx-auto mt-3"><p>Terminos de Servicio</p></div>
-            <div class="col-md-3 mx-auto mt-3"><p>Configuración de Cookies</p></div>     
-          </div>
-      </div>
-
     </footer>
+    
+    
+         
+      <!--iconos-->
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <!--bootstrap-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+  </html>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-</html>

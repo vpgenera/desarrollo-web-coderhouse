@@ -15,14 +15,21 @@ main{
         padding: 16px;
         align-items:start;
         @extend %sticky;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
 
         .contenedor{
             display: flex;
             max-width: 1200px;
+            margin: 0 auto;
             width: 100%;
             flex-flow: column wrap;
             .titulo{
                 @extend %estiloH2;
+            }
+            p{
+                @extend %estiloBody2;
             }
         }
 
@@ -32,14 +39,152 @@ main{
 
 
 
-    #testimonials{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .testimonials{
         width: 100%;
-    
-        .testimonial-heading{
+        @extend %section;
+        @extend %sticky;
+
+        .contenedorTestimonials{
+            max-width: 1200px;
+            margin: auto auto;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 40px;
+            .testimonial-heading{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 30px 0px;
+            }
+            .testimonial-box-container{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+                gap: 16px;
+                .testimonial-box{
+                    width: 500px;
+                    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+                    background-color: $color-gris-clarito;
+                    padding: 20px;
+                    margin: 15;
+                    outline: solid 2px $color-gris-primario;
+                    border-radius: 12px;
+                    cursor: pointer;
+        
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: all ease 0.9s;
+                    }
+                    .box-top{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 20px;
+        
+                        .profile{
+                            display: flex;
+                            align-items: center;
+                            .profile-img{
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                margin-right: 10px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                            }
+                            .user-name{
+                                display: flex;
+                                flex-direction: column ;
+                                strong{
+                                    color: $color-gris-primario;
+                                    font-size: 1.1rem;
+                                    letter-spacing: 0.5px;
+                                }
+                                span{
+                                    color: $color-gris-secundario;
+                                    font-size: 0.8rem;
+        
+                                }
+                            }
+                           .reviews{
+                                i{
+                                color: $color-gris-primario;
+                                }
+        
+                            }
+        
+                        }
+                    }
+
+                }    
+            }
+
+
+
+        }
+    }
+    .contact{
+        @extend %section;
+        width:100%;
+        @extend %sticky;
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column nowrap;
+            .headerContainer{
+                text-align: start;
+                width: 100%;
+            }
+            .bodyContainer{
+                display: flex;
+                flex-flow: row wrap;
+                padding-top: 16px;
+                column-gap: 24px;
+                row-gap: 16px;
+                justify-content: space-between;
+                .text{
+                    flex-basis: 15rem;
+                    text-align: start;
+                }
+                .form{
+                    width: 60%;
+                    flex-grow: 1;
+                    max-width: 40rem;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    .formularioContacto{
+                        display: flex;
+                        flex-flow: column nowrap;
+                        gap:16px;
+                    }
+                   
+                    .form-control{
+                        outline: solid 1px $color-gris-primario;
+                    }
+                    .input-group-text{
+                        outline: solid 1px $color-gris-primario;
+                    }
+                    .boton{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    /*    .testimonial-heading{
             letter-spacing: 1px;
             padding: 10px 20px;
             display: flex;
@@ -140,12 +285,7 @@ main{
         }
     }
 
-
-
-
-
-}
-
+*/
 
 
 
@@ -172,6 +312,11 @@ main{
 
 
 
+
+
+
+
+/*
 
 
 #testimonials{
@@ -281,3 +426,4 @@ main{
         }
     }
 }
+}*/
