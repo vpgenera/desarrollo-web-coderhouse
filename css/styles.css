@@ -605,6 +605,56 @@ main {
   position: relative;
   top: 70px;
 }
+main .heroProyectos {
+  background-image: linear-gradient(to top, rgba(33, 31, 31, 0.7), rgba(0, 0, 0, 0)), url(../assets/images/proyectos.jpg);
+  background-color: rgba(33, 31, 31, 0.5);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  color: #fbfbfb;
+  height: 80vh;
+  max-height: 700px;
+  justify-content: end;
+  padding: 16px;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+main .heroProyectos .contenedor {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  flex-flow: column wrap;
+}
+main .proyectosCarrousel {
+  background-color: #fbfbfb;
+  padding: 16px;
+  width: 100%;
+}
+main .proyectosCarrousel .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .proyectosCarrousel .carousel-inner {
+  border-radius: 12px;
+  height: 500px;
+  background-color: #211F1F;
+}
+main .proyectosCarrousel .carousel-inner .carousel-item {
+  height: 500px;
+}
+main .proyectosCarrousel .carousel-inner .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+main {
+  position: relative;
+  top: 70px;
+}
 main .heroContacto {
   background-image: linear-gradient(to top, rgba(33, 31, 31, 0.7), rgba(0, 0, 0, 0)), url(../assets/images/contacto.jpg);
   background-color: rgba(33, 31, 31, 0.5);
@@ -755,7 +805,7 @@ main .contact .container .bodyContainer .form .boton {
   justify-content: center;
 }
 
-.presentation, .team, .productos, .proyectos, .planesProductos, .contact, main .Equipo, main .productos, main .planesProductos, main .contacto, main .testimonials, main .contact {
+.presentation, .team, .productos, .proyectos, .planesProductos, .contact, main .Equipo, main .productos, main .planesProductos, main .contacto, main .proyectosCarrousel, main .testimonials, main .contact {
   background-color: #fbfbfb;
   color: #211F1F;
   padding: 4rem 1rem;
@@ -772,12 +822,12 @@ main .contact .container .bodyContainer .form .boton {
   margin: 0 auto;
 }
 
-main .hero, .presentation, .team, .productos, .proyectos, .contact, main .heroContacto, main .testimonials, main .contact {
+main .hero, .presentation, .team, .productos, .proyectos, .contact, main .proyectosCarrousel, main .heroContacto, main .testimonials, main .contact {
   position: sticky;
   top: 70px;
 }
 
-main .hero .contenedorTexto .titulo, .presentation .heroPresentation p, main .heroNosotros .contenedor .titulo, main .heroProductos .contenedor .titulo, main .heroContacto .contenedor .titulo {
+main .hero .contenedorTexto .titulo, .presentation .heroPresentation p, main .heroNosotros .contenedor .titulo, main .heroProductos .contenedor .titulo, main .heroProyectos .contenedor .titulo, main .heroContacto .contenedor .titulo {
   font-size: clamp(2rem, 7vw + 1rem, 4rem);
   font-family: "Inter", sans-serif;
   font-weight: 200;
@@ -795,7 +845,7 @@ main .hero .contenedorTexto .titulo, .presentation .heroPresentation p, main .he
   font-weight: 500;
 }
 
-.presentation .contenedorTexto p, .team .headerContainer p, main .heroNosotros .contenedor p, main .heroProductos .contenedor p, main .productos .container .heading p, main .heroContacto .contenedor p {
+.presentation .contenedorTexto p, .team .headerContainer p, main .heroNosotros .contenedor p, main .heroProductos .contenedor p, main .productos .container .heading p, main .heroProyectos .contenedor p, main .heroContacto .contenedor p {
   font-size: 1.25rem;
 }
 
