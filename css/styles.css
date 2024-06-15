@@ -157,7 +157,7 @@ main .botones {
   display: flex;
   flex-flow: column nowrap;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 0;
   align-items: center;
   gap: 40px;
 }
@@ -203,36 +203,91 @@ main .botones {
   object-position: center;
 }
 
-.planes {
+/*
+  .planes{
+      flex-flow: column nowrap;
+      @extend %section;
+      @extend %sticky;
+
+      .container{
+          max-width: 1200px;
+          margin: auto auto;
+          .cards{
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: space-around;
+              article{
+                  width: 18rem;
+                  padding: 8px;
+                  img{
+                      object-fit: contain;
+                      border-radius: 12px;
+                  }
+                  .cardBody{
+                      display: flex;
+                      flex-flow: column wrap;
+                  }
+              }
+          }
+          .boton{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+
+      }
+      div{
+          width: 100%;
+      }
+
+  } */
+.planesProductos {
   flex-flow: column nowrap;
+  position: relative;
 }
-.planes .container {
+.planesProductos .containerPlanes {
   max-width: 1200px;
   margin: auto auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 32px;
 }
-.planes .container .cards {
+.planesProductos .containerPlanes .cardsPlanes {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  gap: 16px;
 }
-.planes .container .cards article {
-  width: 18rem;
+.planesProductos .containerPlanes .cardsPlanes .detallePlan {
+  width: 20rem;
   padding: 8px;
+  border: solid #5F5F5F 1px;
+  border-radius: 12px;
 }
-.planes .container .cards article img {
+.planesProductos .containerPlanes .cardsPlanes .detallePlan .cardImageP {
+  font-size: 100px;
+  text-align: center;
+}
+.planesProductos .containerPlanes .cardsPlanes .detallePlan .cardImageP img {
   object-fit: contain;
   border-radius: 12px;
 }
-.planes .container .cards article .cardBody {
+.planesProductos .containerPlanes .cardsPlanes .detallePlan .cardBody {
   display: flex;
   flex-flow: column wrap;
 }
-.planes .container .boton {
+.planesProductos .containerPlanes .cardsPlanes .detallePlan .cardBody .tituloCard {
+  text-align: center;
+}
+.planesProductos .containerPlanes .cardsPlanes .detallePlan .cardBody strong {
+  text-align: end;
+}
+.planesProductos .containerPlanes .boton {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.planes div {
+.planesProductos div {
   width: 100%;
 }
 
@@ -440,6 +495,116 @@ main {
   position: relative;
   top: 70px;
 }
+main .heroProductos {
+  background-image: linear-gradient(to top, rgba(33, 31, 31, 0.7), rgba(0, 0, 0, 0)), url(../assets/images/encuentro.jpg);
+  background-color: rgba(33, 31, 31, 0.5);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  color: #fbfbfb;
+  height: 80vh;
+  max-height: 700px;
+  justify-content: end;
+  padding: 16px;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+main .heroProductos .contenedor {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  flex-flow: column wrap;
+}
+main .productos {
+  width: 100%;
+  position: relative;
+}
+main .productos .container {
+  max-width: 1200px;
+  margin: auto auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 40px;
+}
+main .productos .container .contenido {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+main .productos .container .contenido .cardProducto {
+  border-radius: 12px;
+  padding: 16px;
+  outline: 2px solid #211F1F;
+  max-width: 400px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: #fbfbfb;
+  padding: 20px;
+  margin: 15;
+  border-radius: 12px;
+  cursor: pointer;
+}
+main .planesProductos {
+  flex-flow: column nowrap;
+  position: relative;
+}
+main .planesProductos .containerPlanes {
+  max-width: 1200px;
+  margin: auto auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 32px;
+}
+main .planesProductos .containerPlanes .cardsPlanes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 16px;
+}
+main .planesProductos .containerPlanes .cardsPlanes .detallePlan {
+  width: 20rem;
+  padding: 8px;
+  border: solid #5F5F5F 1px;
+  border-radius: 12px;
+}
+main .planesProductos .containerPlanes .cardsPlanes .detallePlan .cardImageP {
+  font-size: 100px;
+  text-align: center;
+}
+main .planesProductos .containerPlanes .cardsPlanes .detallePlan .cardImageP img {
+  object-fit: contain;
+  border-radius: 12px;
+}
+main .planesProductos .containerPlanes .cardsPlanes .detallePlan .cardBody {
+  display: flex;
+  flex-flow: column wrap;
+}
+main .planesProductos .containerPlanes .cardsPlanes .detallePlan .cardBody .tituloCard {
+  text-align: center;
+}
+main .planesProductos .containerPlanes .cardsPlanes .detallePlan .cardBody strong {
+  text-align: end;
+}
+main .planesProductos .containerPlanes .boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .planesProductos div {
+  width: 100%;
+}
+main .contacto {
+  position: relative;
+}
+
+main {
+  position: relative;
+  top: 70px;
+}
 main .heroContacto {
   background-image: linear-gradient(to top, rgba(33, 31, 31, 0.7), rgba(0, 0, 0, 0)), url(../assets/images/contacto.jpg);
   background-color: rgba(33, 31, 31, 0.5);
@@ -590,7 +755,7 @@ main .contact .container .bodyContainer .form .boton {
   justify-content: center;
 }
 
-.presentation, .team, .productos, .proyectos, .planes, .contact, main .Equipo, main .testimonials, main .contact {
+.presentation, .team, .productos, .proyectos, .planesProductos, .contact, main .Equipo, main .productos, main .planesProductos, main .contacto, main .testimonials, main .contact {
   background-color: #fbfbfb;
   color: #211F1F;
   padding: 4rem 1rem;
@@ -607,31 +772,35 @@ main .contact .container .bodyContainer .form .boton {
   margin: 0 auto;
 }
 
-main .hero, .presentation, .team, .productos, .proyectos, .planes, .contact, main .heroContacto, main .testimonials, main .contact {
+main .hero, .presentation, .team, .productos, .proyectos, .contact, main .heroContacto, main .testimonials, main .contact {
   position: sticky;
   top: 70px;
 }
 
-main .hero .contenedorTexto .titulo, .presentation .heroPresentation p, main .heroNosotros .contenedor .titulo, main .heroContacto .contenedor .titulo {
+main .hero .contenedorTexto .titulo, .presentation .heroPresentation p, main .heroNosotros .contenedor .titulo, main .heroProductos .contenedor .titulo, main .heroContacto .contenedor .titulo {
   font-size: clamp(2rem, 7vw + 1rem, 4rem);
   font-family: "Inter", sans-serif;
   font-weight: 200;
 }
 
-.team .headerContainer h2, .productos .headerContainer h2 {
+.team .headerContainer h2, .productos .headerContainer h2, main .productos .container .heading .titulo {
   font-size: 2rem;
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
 }
 
-.productos .contentContainer .imagenes article p {
+.productos .contentContainer .imagenes article p, .planesProductos .containerPlanes .cardsPlanes .detallePlan .cardBody .tituloCard, main .planesProductos .containerPlanes .cardsPlanes .detallePlan .cardBody .tituloCard {
   font-size: 1.25rem;
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
 }
 
-.presentation .contenedorTexto p, .team .headerContainer p, main .heroNosotros .contenedor p, main .heroContacto .contenedor p {
+.presentation .contenedorTexto p, .team .headerContainer p, main .heroNosotros .contenedor p, main .heroProductos .contenedor p, main .productos .container .heading p, main .heroContacto .contenedor p {
   font-size: 1.25rem;
+}
+
+main .productos .container .heading .heading1 {
+  font-size: 1rem;
 }
 
 * {
@@ -692,10 +861,6 @@ body nav .nav-link:hover {
   opacity: 1;
 }
 
-/*p{
-    font-size: $font-size-400 ;
-
-}*/
 /*.estiloBody2{
    font-size: $font-size-500 ;
 

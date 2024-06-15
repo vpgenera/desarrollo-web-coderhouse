@@ -175,7 +175,7 @@ main{
             display:flex ;
             flex-flow: column nowrap;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 0;
             align-items: center;
             gap:40px;
 
@@ -237,7 +237,7 @@ main{
 
         }
     }
-  
+  /*
     .planes{
         flex-flow: column nowrap;
         @extend %section;
@@ -260,6 +260,63 @@ main{
                     .cardBody{
                         display: flex;
                         flex-flow: column wrap;
+                    }
+                }
+            }
+            .boton{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+        div{
+            width: 100%;
+        }
+        
+    } */
+    .planesProductos{
+        flex-flow: column nowrap;
+        @extend %section;
+        position: relative;
+        
+        .containerPlanes{
+            max-width: 1200px;
+            margin: auto auto;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 32px;
+            .cardsPlanes{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                gap: 16px;
+
+                .detallePlan{
+                    width: 20rem;
+                    padding: 8px;
+                    border: solid $color-gris-secundario 1px;
+                    border-radius: 12px;
+                    .cardImageP{
+                        font-size: 100px;
+                        text-align: center;
+                        img{
+                            object-fit: contain;
+                            border-radius: 12px;
+                        }
+                    }
+                    
+                    .cardBody{
+                        display: flex;
+                        flex-flow: column wrap;
+                        .tituloCard{
+                            @extend%estiloH4;
+                            text-align: center;
+                        }
+                        
+                        strong{
+                            text-align: end;
+                        }
                     }
                 }
             }
