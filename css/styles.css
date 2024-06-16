@@ -641,7 +641,7 @@ main .proyectosCarrousel {
   padding: 16px;
   width: 100%;
 }
-main .proyectosCarrousel .container {
+main .proyectosCarrousel .containerCarrousel {
   max-width: 1200px;
   margin: 0 auto;
 }
