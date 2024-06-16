@@ -219,14 +219,21 @@ main{
         .container{
             max-width: 1200px;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            flex-flow: column nowrap;
+            gap: 32px;
             
         }
         .carousel-inner{
             border-radius: 12px;
             height: 500px;
             background-color: $color-gris-primario;
+            
             .carousel-item{
             height: 500px;
+            background-color: $color-gris-primario;
+            
             img{
                 height: 500px;
                 object-fit: cover;
@@ -235,6 +242,9 @@ main{
             
             }
 
+        }
+        .boton{
+            text-align: center;
         }
     }
   /*

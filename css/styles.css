@@ -188,6 +188,10 @@ main .botones {
 .proyectos .container {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap;
+  gap: 32px;
 }
 .proyectos .carousel-inner {
   border-radius: 12px;
@@ -196,11 +200,15 @@ main .botones {
 }
 .proyectos .carousel-inner .carousel-item {
   height: 500px;
+  background-color: #211F1F;
 }
 .proyectos .carousel-inner .carousel-item img {
   height: 500px;
   object-fit: cover;
   object-position: center;
+}
+.proyectos .boton {
+  text-align: center;
 }
 
 /*
@@ -645,10 +653,19 @@ main .proyectosCarrousel .carousel-inner {
 main .proyectosCarrousel .carousel-inner .carousel-item {
   height: 500px;
 }
+main .proyectosCarrousel .carousel-inner .carousel-item .carousel-caption {
+  background-color: #211F1F 0, 3;
+}
 main .proyectosCarrousel .carousel-inner .carousel-item img {
-  height: 500px;
+  height: 100%;
+  display: block;
+  width: 100%;
   object-fit: cover;
   object-position: center;
+  background-image: linear-gradient(to top, rgba(33, 31, 31, 0.7), rgba(0, 0, 0, 0));
+}
+main .proyectosCarrousel .boton {
+  text-align: center;
 }
 
 main {

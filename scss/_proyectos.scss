@@ -49,14 +49,25 @@ main{
             background-color: $color-gris-primario;
             .carousel-item{
             height: 500px;
+                
+               .carousel-caption{
+                background-color: $color-gris-primario 0,3;
+               }
+            
             img{
-                height: 500px;
+                height: 100%;
+                display: block;
+                width: 100%;
                 object-fit: cover;
                 object-position: center;
+                background-image: linear-gradient(to top, rgb(33 31 31 /70%),rgb(0 0 0/ 0%));
             }
             
             }
 
+        }
+        .boton{
+            text-align: center;
         }
     }
 }
