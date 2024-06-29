@@ -1,8 +1,8 @@
-main{
+#mainProducts{
     position: relative;
-    top: 70px;
+    top: 0px;
 
-    .heroProductos{
+    #heroProductos{
         background-image: linear-gradient(to top, rgb(33 31 31 /70%),rgb(0 0 0/ 0%)), url(../assets/images/encuentro.jpg) ;
         background-color: rgb(33 31 31 /50%);    
         background-size: cover;
@@ -32,21 +32,20 @@ main{
             }
         }
     }
-    .productos{
+    #webSitesProducts{
          width: 100%;
          @extend %section;
-         position: relative;
          
-
-         .container{
+         .webSitesProducts__container{
             max-width: 1200px;
-            margin: auto auto;
+            margin: 0 auto;
             display: flex;
             flex-flow: column nowrap;
             gap: 40px;
+
             .heading{
                 .heading1{
-                    @extend%estiloP;
+                    @extend%pStyle;
                 }
                 .titulo{
                     @extend %estiloH3;
@@ -58,22 +57,42 @@ main{
             .contenido{
                 display: flex;
                 flex-flow: row wrap;
-                align-items: center;
-                justify-content: space-around;
+                align-items: flex-start;
+                justify-content: center;
                 gap: 20px;
-                .cardProducto{
-                    border-radius: 12px;
-                    padding: 16px;
-                    outline: 2px solid $color-gris-primario;
-                    max-width: 400px;
-                    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-                    background-color: $color-gris-clarito;
-                    padding: 20px;
-                    margin: 15;
-                    
-                    border-radius: 12px;
-                    cursor: pointer;
+
+                .video{
+                    max-width: 550px;
+                    height: 400px;
+                    overflow: hidden;
+                    video{
+                        height: 100%;
+                    }
                 }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    flex-basis: 590px;
+                    flex-shrink: 1;
+                    .cardProducto{
+                        display: flex;
+                        flex-flow: column;
+                        outline: 2px solid $color-azul-clarito;
+                        max-width: auto;
+                        height: 200px;
+                        box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+                        background-color: $color-azul-clarito;
+                        padding: 20px;
+                        
+                        
+                        border-radius: 12px;
+                        cursor: pointer;
+                    }
+
+                }
+
+                
             }
          }                 
     }
@@ -81,6 +100,8 @@ main{
         flex-flow: column nowrap;
         @extend %section;
         position: relative;
+        background-color: $color-gris-primario;
+        color: $color-gris-clarito;
         
         .containerPlanes{
             max-width: 1200px;
@@ -88,46 +109,63 @@ main{
             display: flex;
             flex-flow: column nowrap;
             gap: 32px;
+
             .cardsPlanes{
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-around;
                 gap: 16px;
+                
 
                 .detallePlan{
-                    width: 20rem;
-                    padding: 8px;
-                    border: solid $color-gris-secundario 1px;
+                    width: 22rem;
+                    padding: 1rem;
                     border-radius: 12px;
-                    .cardImageP{
-                        font-size: 100px;
+                    @extend%glassEffect--blue;
+                    .plan--img{
                         text-align: center;
-                        img{
-                            object-fit: contain;
-                            border-radius: 12px;
-                        }
+                        .material-symbols-rounded{
+                            font-size: 90px;
+                            font-weight: 200;
+                            
+                        } 
                     }
                     
                     .cardBody{
                         display: flex;
                         flex-flow: column wrap;
+                        align-items: center;
                         .tituloCard{
                             @extend%estiloH4;
                             text-align: center;
                         }
-                        
-                        strong{
-                            text-align: end;
+                        .plan--price{
+                            display: flex;
+                            padding: 8px 16px;
+                            width: fit-content;
+                            
+                            gap: 8px;
+                            background-color: $color-azul;
+                            color: $color-gris-clarito;
+                            border-radius: 20px;
+
+                            
                         }
+                        
+                        
                     }
                 }
             }
-            .boton{
+            .button{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+        
+                .button--3{
+                    @extend%linkStyle;
+                    @extend%button--underlined--white;
+                }
             }
-
         }
         div{
             width: 100%;

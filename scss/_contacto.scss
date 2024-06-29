@@ -1,25 +1,24 @@
-main{
+#mainContacto{
     position: relative;
-    top: 70px;
+    top:0px;
 
-    .heroContacto{
+    #heroContacto{
         background-image: linear-gradient(to top, rgb(33 31 31 /70%),rgb(0 0 0/ 0%)), url(../assets/images/contacto.jpg) ;
         background-color: rgb(33 31 31 /50%);    
         background-size: cover;
         background-position: center center ;
         background-blend-mode:multiply;
         color:$color-gris-clarito;
-        height: 80vh;
-        max-height: 700px;
+        height: 100vh;
+        max-height: 900px;
         justify-content: end;
         padding: 16px;
         align-items:start;
-        @extend %sticky;
         display: flex;
         flex-direction: column;
         justify-content: end;
 
-        .contenedor{
+        .heroContacto__container{
             display: flex;
             max-width: 1200px;
             margin: 0 auto;
@@ -39,18 +38,19 @@ main{
 
 
 
-    .testimonials{
+    #testimonials{
         width: 100%;
         @extend %section;
-        @extend %sticky;
+        background-color: $color-gris-primario;
+        color: $color-gris-clarito;
 
-        .contenedorTestimonials{
+        .testimonials__container{
             max-width: 1200px;
             margin: auto auto;
             display: flex;
             flex-flow: column nowrap;
             gap: 40px;
-            .testimonial-heading{
+            .testimonial__heading{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -64,14 +64,13 @@ main{
                 flex-wrap: wrap;
                 width: 100%;
                 gap: 16px;
+
                 .testimonial-box{
                     width: 500px;
-                    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-                    background-color: $color-gris-clarito;
+                    @extend%glassEffect--blue;
+                    color: $color-gris-clarito;
                     padding: 20px;
-                    margin: 15;
-                    outline: solid 2px $color-gris-primario;
-                    border-radius: 12px;
+                    border-radius: 25px;
                     cursor: pointer;
         
                     &:hover{
@@ -104,12 +103,12 @@ main{
                                 display: flex;
                                 flex-direction: column ;
                                 strong{
-                                    color: $color-gris-primario;
+                                    color: $color-gris-clarito;
                                     font-size: 1.1rem;
                                     letter-spacing: 0.5px;
                                 }
                                 span{
-                                    color: $color-gris-secundario;
+                                    color: $color-gris-medio;
                                     font-size: 0.8rem;
         
                                 }
@@ -177,6 +176,10 @@ main{
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        .boton3{
+                            @extend%linkStyle;
+                            @extend%button--outlined--black;
+                        }
                     }
                 }
             }

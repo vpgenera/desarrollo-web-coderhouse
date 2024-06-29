@@ -1,6 +1,5 @@
 %section{
-    background-color: $color-gris-clarito;
-    color: $color-gris-primario;
+    
     padding: 4rem 1rem;
     row-gap: 16px;
     column-gap: 16px;
@@ -27,12 +26,12 @@
 %estiloH2{
     font-size: $font-size-xl;
     font-family: $fuente-titulos;
-    font-weight: 200; 
+    font-weight: 800; 
 }
 %estiloH3{
-    font-size: $font-size-600;
+    font-size: $font-size-l;
     font-family: $fuente-textos;
-    font-weight: 500; 
+    font-weight: 600; 
 }
 %estiloH4{
     font-size: $font-size-500;
@@ -51,6 +50,163 @@
     font-weight: 500;
 }
 
-%estiloP{
+%pStyle{
     font-size: $font-size-400 ;
+    font-weight: 300;
+}
+
+%button--outlined--black{
+    width: auto;
+    min-height: 48px;
+    height: fit-content;
+    outline: 2px solid;
+    outline-color: $color-gris-secundario ;
+    border-radius: 25px;
+
+    
+    padding: 12px;
+    background-color: transparent;
+    transition: outline-color linear 0.3s;
+    color: $color-gris-primario;
+    text-decoration: none;
+    @extend%linkStyle;
+
+    &:hover{
+        outline: solid 2px ;
+        color: $color-gris-primario;
+        text-decoration: none;
+        outline-color: $color-gris-primario;
+        transform: scaleX(1);
+    }
+}
+
+
+%button--outlined--white{
+    width: auto;
+    min-height: 48px;
+    height: fit-content;
+    outline: 2px solid;
+    outline-color: $color-gris-secundario ;
+    border-radius: 25px;
+
+    
+    padding: 12px;
+    background-color: transparent;
+    transition: outline-color linear 0.3s;
+    color: $color-gris-clarito;
+    text-decoration: none;
+    @extend%linkStyle;
+
+    &:hover{
+        outline: solid 2px ;
+        color: $color-gris-clarito;
+        text-decoration: none;
+        outline-color: $color-gris-clarito;
+        transform: scaleX(1);
+    }
+}
+%button--underlined--white{
+    width: auto;
+    height: 48px;
+    padding: 12px;
+    background-color: transparent;
+    transition: color ease-in 1s;
+    color: $color-gris-clarito;
+    text-decoration: none;
+    @extend%linkStyle;
+    position: relative;
+
+    &:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $color-gris-secundario;
+        left: 0;
+        bottom: 0px;
+        transition: transform linear .2s;
+        transform: scaleX(0.9);
+    }
+    &:hover{
+        color: $color-gris-clarito;
+    }
+    &:hover:after{
+        width: 100%;
+        transform: scaleX(1);
+        background-color: $color-gris-clarito;   
+    }
+}
+%button--underlined--black{
+    width: auto;
+    height: 48px;
+    padding: 12px;
+    background-color: transparent;
+    color: $color-gris-primario;
+    text-decoration: none;
+    @extend%linkStyle;
+    position: relative;
+    
+
+    &:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $color-gris-secundario;
+        opacity: 0.7;
+        left: 0;
+        bottom: 0px;
+        transition: transform linear .2s;
+        transform: scaleX(0.9);
+    }
+    &:hover{
+        color: $color-gris-primario;
+    }
+    &:hover:after{
+        width: 100%;
+        transform: scaleX(1);
+        background-color: $color-gris-primario;
+        
+    }
+}
+%buttonStyle--3{
+    width: auto;
+    min-height: 48px;
+    height: fit-content;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: $color-gris-primario;
+    transition: color 1s;
+    color: $color-gris-clarito;
+    text-decoration: none;
+
+    &:hover{
+        background-color: transparent;
+        outline: solid 2px $color-gris-primario;
+        color: $color-gris-primario;
+        text-decoration: none;
+    }
+
+}
+%linkStyle{
+    font-size: $font-size-500 ;
+    font-weight:400;
+}
+
+%glassEffect--blue{
+    
+    border: 2px solid var(--gradiente-bordes, $color-gradiente-bordes2);
+    /*background: var(--gradiente-azulado, linear-gradient(326deg, $color-gradiente-azulado1 15.34%, $color-gradiente-azulado2 84.54%));*/
+    background: var(--gradiente-glass-def, linear-gradient(184deg, rgba(107, 132, 244, 0.12) 34.28%, rgba(245, 246, 251, 0.08) 102.91%));
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+
+
+}
+%gradient__background{
+    background-image: linear-gradient(326deg, $color-gradiente-azulado1 15.34%, $color-gradiente-azulado2 84.54%);
+}
+
+%gradient__border{
+    background-image: linear-gradient(131deg, $color-gradiente-bordes1 12.57%, $color-gradiente-bordes2 86.17%);
 }

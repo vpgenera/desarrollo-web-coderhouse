@@ -1,14 +1,18 @@
 @import"variables";
-@import"media";
 @import"index";
 @import"nosotros";
 @import"productos";
 @import"proyectos";
 @import"contacto";
 @import"extend";
+@import"media";
 
-*{
+*,
+*::before,
+*::after{
     box-sizing: border-box;
+}
+*{
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,57 +22,152 @@
     display: none;
 }
 
-.sectioAbsolute{
-    position: absolute;
-    z-index: 1;
-    top:0;
-}
 body{
     background-color: $color-gris-clarito;
     color: $color-gris-primario;
     font-family: $fuente-textos;
     position: relative;
     scroll-behavior: smooth;
+    width: 100%;
+    @extend%pStyle;
+    
+
     
     .header{
-        width: 100vw;
-        background-color: $color-gris-clarito;
+        width: 98%;
+        background-color: transparent;
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
         position: fixed;
         top: 0;
         z-index: 1;
-    }
-    nav{
-        .brand{
-            display: flex;
-            gap: 4px;
-            align-items: flex-end;
-            h1{
-            font-size: $font-size-500;
-            font-family: $fuente-titulos;
-            font-weight: 100;
-            text-transform: lowercase;
-            color: $color-gris-primario
-        }
-        .navbar-toggler{
-            border: none;
-        }
+        border-radius: 12px;
+        mix-blend-mode: difference;
+        margin: 8px 4px;
 
-        }
         
-        text-transform: uppercase ;
-        .nav-link{
-            text-decoration: underline transparent;
-            transition:  text-decoration step-start 2s, opacity var(--animation-link);
-
-            &:hover{
-                text-decoration: underline;
-                opacity: 1 ;
-                
-                
+        .navbar{
+            color: $color-gris-clarito;
+            
+            .brand{
+                img{
+                    max-height: 48px;
                 }
             }
+            .navbar-toggler{
+                border: none;
+                
+            }
+            .navbar-nav{
+                margin-left: auto;
+            }
+            .nav-item{
+                padding: 0 1rem;
+            }
+            .nav-link{
+                text-decoration: none;
+                transition: text-decoration ease-in 2s ;
+                color: $color-gris-clarito;
+                @extend%linkStyle;
+                position: relative;
+
+                
+
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 0%;
+                    height: 3px;
+                    background-color: $color-gris-clarito;
+                    left: 0;
+                    bottom: 0px;
+                    transition: transform linear .2s;
+                    transform: scaleX(0);
+                }
+                &:hover{
+                    color: #ffff;
+                }
+
+                &:hover:after{
+                    width: 100%;
+                    transform: scaleX(1);
+                    
+                }
+            }
+            .active{
+                color: $color-gris-clarito !important;
+                font-weight: bold;
+                &:hover{
+                    color: $color-gris-secundario !important;
+                    }  
+            }
         }
+    }
+        
+        
+        
+
+
+@keyframes touch{
+    0%{
+        opacity:0.5;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    100%{
+        opacity:0;
+        transform: scale(0.99);
+    }
 }
+
+@keyframes show {
+    from{
+        opacity:0;
+        scale: 50%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+@keyframes floating{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.001)
+    }
+    50%{
+        transform: scale(1)
+    }
+    100%{
+        transform: sacale(1.01);
+    }
+}
+
+@keyframes scrollleft {
+    to{
+        left: -500px;
+    }
+}
+@keyframes scrollright {
+    to{
+        right: -300px;
+    }
+}
+@keyframes scrollup {
+    to{
+        top: -100px;
+    }
+}
+
+
+
+
 
 
 
@@ -76,8 +175,8 @@ body{
 /*.estiloBody2{
    font-size: $font-size-500 ;
 
-}*/
-.boton1{
+}
+.button--1{
     width: auto;
     min-height: 48px;
     height: fit-content;
@@ -92,7 +191,6 @@ body{
     }
     &:hover{
         background-color: $color-gris-primario;
-        
         outline: solid 2px $color-gris-clarito;
         a{
             color: $color-gris-clarito;
@@ -100,7 +198,7 @@ body{
         }
     }
 }
-.boton2{
+.button-2{
     width: auto;
     height: 48px;
     border-radius: 12px;
@@ -148,7 +246,8 @@ body{
             
         }
     }
-}
+
+}*/
 footer{
     background-color: $color-gris-primario;
     color: $color-gris-clarito;
@@ -180,6 +279,7 @@ footer{
                 flex-grow: 1;
                 text-align:center ;
                 padding: 0 16px;
+                
                 .columnHeading{
                     margin-bottom: 1rem;
                 }
@@ -189,12 +289,26 @@ footer{
                     padding: 5px 10px;
                     margin: 0 auto;
                 }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+                
+                .boton{
+                    button{
+                        @extend%button--outlined--white;
+                    }
+                    
+                }
             }
             
         }
         .footerBottom{
             display: flex;
-            margin-top: 40px;
+            margin: 2rem auto 0rem auto;
+            max-width: 900px;
+
             .copyright{
                 margin-right: auto;
             }
@@ -209,52 +323,4 @@ footer{
 
 
 
-/*
-
-
-.navbar-toggler {
-    border: none;
 }
-.presentacion{
-    height: auto;
-}
-.nosotros{
-    height: 80vh;
-}
-.productos{
-    height: auto;
-}
-
-.card{
-    width: 18rem;
-}
-
-.proyectos{
-    height: auto;
-}
-
-.planes{
-    height: auto;
-}
-.h2{
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-.imgProductos{
-    height: 20vh;
-}
-.linkEncubierto{
-    text-decoration: none;
-    
-}
-
-.heroImgProductos{
-    height: 40vh;
-    
-}
-.nav-item{
-    &hover{
-        text-decoration: underline;
-    }
-}
-*/

@@ -1,19 +1,31 @@
 
-$fuente-textos: "Roboto Mono", monospace ;
+$fuente-textos: "Inter", sans-serif ;
 $fuente-titulos: "Inter", sans-serif ;
+$fuente-cursiva: "Playfair Display", serif;
 $color-gris-primario: #211F1F;
 $color-gris-secundario: #5F5F5F;
 $color-gris-clarito: #fbfbfb;
+$color-gris-medio: #C1BABA;
+$color-azul: #173FF4;
+$color-azul-oscuro: #021052;
+$color-azul-clarito: #CFD6F5;
+$color-azul-osurisimo: #010621;
 
+$color-gradiente-azulado1: rgba(107, 132, 244, 0.08);
+$color-gradiente-azulado2: rgba(245, 246, 251, 0.08);
 
+$color-gradiente-bordes1: rgba(178, 191, 251, 0.24);
+$color-gradiente-bordes2: rgba(245, 246, 251, 0.60);
 
 $font-size-400 : 1rem;
-$font-size-500 : 1.25rem;
+$font-size-500 : 1.125rem;
 $font-size-600 : 2rem;
-$font-size-xl : clamp(2rem, 7vw + 1rem, 4rem);
+$font-size-l: clamp(2rem, 5vw + 1rem, 4rem);
+$font-size-xl : clamp(3rem, 7vw + 1rem, 6rem);
 
 
-$animation-link: 0.735s ease;
+
+
 
 
 
